@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
   agent {
     docker {
       image "node:8-alpine"
@@ -15,9 +15,8 @@ pipeline{
      }
     stage("Test"){
       steps {
-       sh "npm run test:ci" 
+       sh "npm run test:ci"
       }
-    }
-    
+    }    
   }
 }
